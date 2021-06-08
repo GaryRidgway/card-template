@@ -1,0 +1,38 @@
+.artwork {
+	  height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.artwork .creature {
+  	width: 100%;
+  	height: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.artwork .creature .creature-image {
+    width: 70%;
+    height: auto;
+}
+
+.creature .creature-size-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creature .creature-vertical-container {
+    width: 100%;
+    height: 100%;
+}
+
+.creature-container {
+    width: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,117 @@
+.bottom-textbox {
+	margin: 0px 20px 20px 20px;
+    height: calc(100% - 20px);
+}
+
+.card-bottom-wysiwyg-wrapper {
+	position: relative;
+    height: 100%;
+}
+
+.creature-proficiencies-text {
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 15px;
+	border-top: var(--border-size-thin) solid var(--black);
+	border-bottom: var(--border-size-thin) solid var(--black);
+
+    
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.bottom-textbox .ql-snow.ql-toolbar button {
+	height: 32px;
+	width: 32px;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow {
+	border-color: var(--black);
+	border-width: var(--border-size-thin);
+}
+
+.card-bottom-wysiwyg.ql-container.ql-snow {
+	border-color: transparent;
+	border-width: var(--border-size-thin);
+	transition: border-color 0.15s ease-in-out;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow {
+	background-color: var(--stark-white-transparent);
+	position: absolute;
+	bottom: 100%;
+    color: var(--black);
+}
+
+.card-bottom-wysiwyg.ql-container.ql-snow {
+	font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 22px;
+    background-color: var(--stark-white-transparent);
+}
+
+.card-bottom-wysiwyg .ql-editor {
+    padding: 4px 10px;
+}
+
+.card-bottom-wysiwyg-wrapper .ql-toolbar {
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.15s ease-in-out;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button {
+	padding: 3px 5px 3px 3px;
+	border: 1px solid transparent;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button:hover {
+	color: var(--black);
+	background-color: var(--grey-bg-transparent-light);
+    border-radius: 3px;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button.ql-active {
+	color: var(--black);
+	background-color: var(--grey-bg-transparent);
+    border-radius: 3px;
+    border-color: var(--black);
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button.ql-active .ql-stroke {
+	stroke: var(--black);
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button.ql-active .ql-fill {
+	fill: var(--black);
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button:hover .ql-stroke {
+	stroke: var(--black);
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button:hover .ql-fill {
+	fill: var(--black);
+}
+
+/* All styles below here deal with the activation of the wysiwyg UI. */
+.card-bottom-wysiwyg-wrapper.wysiwyg-active .ql-toolbar {
+	opacity: 1;
+	pointer-events: all;
+	width: 100%;
+}
+
+.card-bottom-wysiwyg-wrapper.wysiwyg-active .card-bottom-wysiwyg {
+	border-color: var(--black);
+}

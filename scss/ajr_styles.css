@@ -1,0 +1,1001 @@
+body {
+  margin: 0;
+}
+
+.positioner {
+  background: #3c3c3c;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  height: 800px;
+  width: 571.4px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #fafafa;
+}
+
+.card > img {
+  position: absolute;
+  height: 800px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  -webkit-filter: saturate(3);
+          filter: saturate(3);
+}
+
+.card .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #0000001a;
+}
+
+.card .corners {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card .corners .corner {
+  width: 100%;
+  height: calc(571.4px - 1rem);
+  -webkit-filter: drop-shadow(2px 2px 12px #00000062);
+          filter: drop-shadow(2px 2px 12px #00000062);
+  position: absolute;
+  border-top: 1rem solid #fafafaa6;
+}
+
+.card .corners .corner:before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  background-color: #fafafa;
+  height: 1rem;
+  top: 1rem;
+  left: -7rem;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .corners .corner:after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  background-color: #fafafa;
+  height: 1rem;
+  top: 1rem;
+  right: -7rem;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .corners .corner.T {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 1;
+}
+
+.card .corners .corner.TR {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+}
+
+.card .corners .corner.R {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.card .corners .corner.BR {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  z-index: 2;
+}
+
+.card .corners .corner.B {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 1;
+  height: calc(100% - 1rem);
+}
+
+.card .corners .corner.BL {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  z-index: 2;
+}
+
+.card .corners .corner.L {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.card .corners .corner.TL {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  z-index: 2;
+}
+
+.card .titlebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  position: relative;
+  top: -123px;
+}
+
+.card .titleing {
+  font-family: 'Cinzel', serif;
+  color: #fafafa;
+  z-index: 1;
+}
+
+.card .titleing.A {
+  color: #fafafaa6;
+  font-size: 37rem;
+  line-height: 26rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 2px 20px #000000;
+          box-shadow: 5px 2px 20px #000000;
+  text-shadow: 5px 2px 20px #000000;
+  border: 1rem solid #fafafaa6;
+  background-color: #0000008a;
+  position: relative;
+  width: 416px;
+  height: 416px;
+}
+
+.card .titleing.A > span {
+  position: absolute;
+  z-index: 4;
+  left: 4px;
+}
+
+.card .titleing.A:before, .card .titleing.A:after {
+  position: absolute;
+  content: '';
+  width: calc(100% + 3rem);
+  border: 12px solid transparent;
+  border-bottom-color: #fafafaa6;
+  height: calc(100% + 3rem);
+  right: -36px;
+  top: -36px;
+  background: transparent;
+  z-index: 0;
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+  border-radius: 50%;
+}
+
+.card .titleing.A:before {
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+}
+
+.card .titleing.A:after {
+  -webkit-transform: rotate(-65deg);
+          transform: rotate(-65deg);
+}
+
+.card .titleing.A .spike-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.card .titleing.A .spike-1:before, .card .titleing.A .spike-1:after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: calc(40%);
+  right: calc(50% - 6px);
+  top: 109%;
+  background: #fafafaa6;
+  z-index: 0;
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .titleing.A .spike-1:before {
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+  right: calc(50% + 3px);
+}
+
+.card .titleing.A .spike-1:after {
+  -webkit-transform: skewY(-45deg);
+          transform: skewY(-45deg);
+  right: calc(50% - 9px);
+}
+
+.card .titleing.A .spike-2,
+.card .titleing.A .spike-3,
+.card .titleing.A .spike-4,
+.card .titleing.A .spike-5,
+.card .titleing.A .spike-6,
+.card .titleing.A .spike-7,
+.card .titleing.A .spike-8,
+.card .titleing.A .spike-9 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 28px;
+}
+
+.card .titleing.A .spike-2:before,
+.card .titleing.A .spike-3:before,
+.card .titleing.A .spike-4:before,
+.card .titleing.A .spike-5:before,
+.card .titleing.A .spike-6:before,
+.card .titleing.A .spike-7:before,
+.card .titleing.A .spike-8:before,
+.card .titleing.A .spike-9:before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: calc(40%);
+  right: calc(50% - 6px);
+  top: 116%;
+  background: #fafafaa6;
+  z-index: 0;
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+  right: calc(50% - 6px);
+}
+
+.card .titleing.A .spike-2 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.card .titleing.A .spike-2:before {
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+}
+
+.card .titleing.A .spike-3 {
+  -webkit-transform: rotate(68deg);
+          transform: rotate(68deg);
+}
+
+.card .titleing.A .spike-3:before {
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+}
+
+.card .titleing.A .spike-4 {
+  -webkit-transform: rotate(46deg);
+          transform: rotate(46deg);
+}
+
+.card .titleing.A .spike-4:before {
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+}
+
+.card .titleing.A .spike-5 {
+  -webkit-transform: rotate(24deg);
+          transform: rotate(24deg);
+}
+
+.card .titleing.A .spike-5:before {
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+}
+
+.card .titleing.A .spike-6 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.card .titleing.A .spike-6:before {
+  -webkit-transform: skewY(-45deg);
+          transform: skewY(-45deg);
+}
+
+.card .titleing.A .spike-7 {
+  -webkit-transform: rotate(-68deg);
+          transform: rotate(-68deg);
+}
+
+.card .titleing.A .spike-7:before {
+  -webkit-transform: skewY(-45deg);
+          transform: skewY(-45deg);
+}
+
+.card .titleing.A .spike-8 {
+  -webkit-transform: rotate(-46deg);
+          transform: rotate(-46deg);
+}
+
+.card .titleing.A .spike-8:before {
+  -webkit-transform: skewY(-45deg);
+          transform: skewY(-45deg);
+}
+
+.card .titleing.A .spike-9 {
+  -webkit-transform: rotate(-24deg);
+          transform: rotate(-24deg);
+}
+
+.card .titleing.A .spike-9:before {
+  -webkit-transform: skewY(-45deg);
+          transform: skewY(-45deg);
+}
+
+.card .titleing.J {
+  z-index: 3;
+  font-size: 7.5rem;
+  letter-spacing: 1rem;
+  line-height: 8rem;
+  padding-left: 1.2rem;
+  top: 131px;
+  font-weight: 700;
+  position: absolute;
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .titleing.J .apos {
+  margin-left: -9px;
+}
+
+.card .titleing.J .s {
+  margin-left: -18px;
+}
+
+.card .titleing.R {
+  font-size: 7rem;
+  line-height: 7rem;
+  position: relative;
+  letter-spacing: 3.6rem;
+  font-weight: 700;
+  padding-left: 4.6rem;
+  position: absolute;
+  bottom: 89px;
+}
+
+.card .titleing.R .Errant {
+  position: absolute;
+  width: 29px;
+  overflow: hidden;
+  top: 0px;
+  left: 58px;
+}
+
+.card .titleing.R .words {
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .titleing.R .R {
+  margin-right: -15px;
+}
+
+.card .titleing.R .left, .card .titleing.R .right {
+  left: -88px;
+  top: -49px;
+  position: relative;
+}
+
+.card .titleing.R .left:after, .card .titleing.R .right:after {
+  position: absolute;
+  content: '';
+  width: 81px;
+  border: 0.7rem solid transparent;
+  border-left-color: #fafafa;
+  border-top-color: #fafafa;
+  height: 2rem;
+  right: 87%;
+  top: 59px;
+  border-top-left-radius: 40px;
+  background: transparent;
+  z-index: 0;
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .titleing.R .left:before, .card .titleing.R .right:before {
+  position: absolute;
+  content: '';
+  width: 74px;
+  border: 0.7rem solid transparent;
+  border-left-color: #fafafa;
+  border-top-color: #fafafa;
+  height: 0rem;
+  right: 82.5%;
+  top: 90px;
+  background: transparent;
+  z-index: 0;
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .titleing.R .left .left-feathers:after,
+.card .titleing.R .left .right-feathers:after, .card .titleing.R .right .left-feathers:after,
+.card .titleing.R .right .right-feathers:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  border: 0.4rem solid transparent;
+  border-left-color: #fafafa;
+  border-top: #fafafa;
+  height: 230px;
+  right: 91%;
+  top: 45px;
+  -webkit-transform: skewY(-45deg);
+          transform: skewY(-45deg);
+  background: #fafafa;
+  z-index: 0;
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .titleing.R .left .left-feathers:before,
+.card .titleing.R .left .right-feathers:before, .card .titleing.R .right .left-feathers:before,
+.card .titleing.R .right .right-feathers:before {
+  position: absolute;
+  content: '';
+  width: 0px;
+  border: 0.4rem solid #fafafa;
+  background-color: #fafafa;
+  height: 139px;
+  right: 95%;
+  top: 45px;
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+  z-index: 0;
+  -webkit-filter: drop-shadow(2px 2px 12px #000000);
+          filter: drop-shadow(2px 2px 12px #000000);
+}
+
+.card .titleing.R .right {
+  left: unset;
+  right: -14px;
+  top: -160px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.artwork {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.artwork .creature {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.artwork .creature .creature-image {
+  width: 70%;
+  height: auto;
+}
+
+.creature .creature-size-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creature .creature-vertical-container {
+  width: 100%;
+  height: 100%;
+}
+
+.creature-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.creature-controls-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: var(--base-transition);
+  transition: var(--base-transition);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  top: 15%;
+}
+
+.creature-controls-container:hover {
+  opacity: 1;
+}
+
+/* Creature rotate controls. */
+.creature-controls-container:hover .creature-controls {
+  pointer-events: all;
+}
+
+.creature-controls {
+  pointer-events: none;
+  position: relative;
+  width: 310px;
+  height: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 14px;
+  border: var(--border-size) solid var(--stark-white-transparent);
+  border-radius: 27px;
+  background-color: rgba(80, 80, 80, 0.49);
+  -webkit-box-shadow: var(--m-s-3);
+          box-shadow: var(--m-s-3);
+}
+
+.rotate-creature {
+  left: 0;
+  padding: 14px;
+  top: 0;
+  position: absolute;
+}
+
+.rotate-creature .rs-bg-color {
+  background-color: transparent;
+}
+
+.rotate-creature .rs-path-color {
+  background-color: transparent;
+  border: var(--border-size) solid var(--stark-white-transparent);
+  border-radius: 1000px;
+}
+
+.rotate-creature .rs-tooltip.edit,
+.rotate-creature .rs-tooltip.hover,
+.rotate-creature .rs-tooltip {
+  border: 1px solid var(--black-transparent);
+  color: var(--black);
+  -webkit-transition: var(--base-transition);
+  transition: var(--base-transition);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  min-width: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.rotate-creature .rs-tooltip.edit:hover {
+  border: 1px solid var(--black-transparent-hover);
+  cursor: text;
+}
+
+.rotate-creature .rs-tooltip.edit:focus,
+.rotate-creature .rs-tooltip.hover {
+  border: 1px solid var(--black);
+  cursor: text;
+}
+
+.rotate-creature .rs-handle:after {
+  background-color: transparent;
+}
+
+.rotate-creature .rs-border {
+  border-color: transparent;
+  pointer-events: none;
+}
+
+.rotate-creature .rs-inner.rs-border:before {
+  background-color: var(--stark-white-transparent);
+  position: absolute;
+  content: 'rotation';
+  width: 100%;
+  text-align: center;
+  top: 23%;
+  padding: 3px 5px;
+  z-index: 11;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.rotate-creature .rs-handle {
+  background-color: var(--black);
+  border: 2px solid #fff;
+}
+
+.rotate-creature .rs-block {
+  overflow: hidden;
+}
+
+.slidecontainer {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: var(--border-size);
+  /* Specified height */
+  background: var(--stark-white-transparent);
+  outline: none;
+  /* Remove outline */
+  position: relative;
+  width: calc(100% - 28px);
+  margin: auto;
+}
+
+/* The slider itself */
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  background: var(--black);
+  /* Green background */
+  cursor: move;
+  /* Cursor on hover */
+  border-radius: 1000px;
+  border: 2px solid #fff;
+}
+
+.slider::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  background: var(--black);
+  /* Green background */
+  cursor: move;
+  /* Cursor on hover */
+  border-radius: 1000px;
+  border: 2px solid #fff;
+}
+
+.bottom-slider {
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider-header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-title {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 3px 5px;
+  padding-right: 67px;
+  background-color: var(--stark-white-transparent);
+  border-left: 14px solid transparent;
+}
+
+.slider-tooltip {
+  width: 54px;
+  border: 1px solid var(--black-transparent);
+  color: var(--black);
+  -webkit-transition: var(--base-transition);
+  transition: var(--base-transition);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  min-width: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0px 5px 8px;
+  border-radius: 7px;
+  font-size: 13px;
+  margin-right: 14px;
+}
+
+/* Styles for size slider */
+.bottom-slider.size {
+  top: 285px;
+}
+
+.bottom-slider.size .size-position-title {
+  padding-right: 147px;
+}
+
+/* Styles for vertical slider */
+.bottom-slider.vertical {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  right: -24px;
+  top: 60px;
+  width: 174px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.bottom-slider.vertical .vertical-position-header {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.bottom-slider.vertical .vertical-position-title {
+  padding-right: 18px;
+}
+
+.bottom-slider.vertical .vertical-position-title:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 18px;
+  background-color: var(--stark-white-transparent);
+  right: -18px;
+  top: 0;
+}
+
+.bottom-slider.vertical .slider-vertical-tooltip {
+  margin: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  min-width: 54px;
+}
+
+.bottom-slider.vertical .vertical-position {
+  width: 98%;
+  margin: 0;
+}
+
+:root {
+  /* Variables */
+  --border-size: 4px;
+  --border-size-thin: calc(var(--border-size) / 2);
+  --standard-size: 800px;
+  --card-top-height: calc(var(--standard-size) * 0.90875);
+  --whole-card-height: 1113px;
+  /* Colors */
+  --black: #3b3933;
+  --black-transparent: rgb(59, 57, 51, 0.5);
+  --black-transparent-hover: rgb(59, 57, 51, 0.8);
+  --white: #eee5cb;
+  --red: #991b22;
+  --green: #469c90;
+  --stark-white-transparent: rgba(255, 255, 255, 0.95);
+  --grey-bg-transparent: rgba(121, 121, 121, 0.42);
+  --grey-bg-transparent-light: rgba(121, 121, 121, 0.20);
+  /* Material Shadows */
+  --m-s-1: 0 1px  3px  rgba(0,0,0,0.12), 0 1px  2px  rgba(0,0,0,0.24);
+  --m-s-2: 0 3px  6px  rgba(0,0,0,0.16), 0 3px  6px  rgba(0,0,0,0.23);
+  --m-s-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px  6px  rgba(0,0,0,0.23);
+  /* Academic theme variables*/
+  --base-transition: all 0.15s ease-in-out;
+}
+
+.bottom-textbox {
+  margin: 0px 20px 20px 20px;
+  height: calc(100% - 20px);
+}
+
+.card-bottom-wysiwyg-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.creature-proficiencies-text {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 15px;
+  border-top: var(--border-size-thin) solid var(--black);
+  border-bottom: var(--border-size-thin) solid var(--black);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.bottom-textbox .ql-snow.ql-toolbar button {
+  height: 32px;
+  width: 32px;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow {
+  border-color: var(--black);
+  border-width: var(--border-size-thin);
+}
+
+.card-bottom-wysiwyg.ql-container.ql-snow {
+  border-color: transparent;
+  border-width: var(--border-size-thin);
+  -webkit-transition: border-color 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow {
+  background-color: var(--stark-white-transparent);
+  position: absolute;
+  bottom: 100%;
+  color: var(--black);
+}
+
+.card-bottom-wysiwyg.ql-container.ql-snow {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 22px;
+  background-color: var(--stark-white-transparent);
+}
+
+.card-bottom-wysiwyg .ql-editor {
+  padding: 4px 10px;
+}
+
+.card-bottom-wysiwyg-wrapper .ql-toolbar {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button {
+  padding: 3px 5px 3px 3px;
+  border: 1px solid transparent;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button:hover {
+  color: var(--black);
+  background-color: var(--grey-bg-transparent-light);
+  border-radius: 3px;
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button.ql-active {
+  color: var(--black);
+  background-color: var(--grey-bg-transparent);
+  border-radius: 3px;
+  border-color: var(--black);
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button.ql-active .ql-stroke {
+  stroke: var(--black);
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button.ql-active .ql-fill {
+  fill: var(--black);
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button:hover .ql-stroke {
+  stroke: var(--black);
+}
+
+.bottom-textbox .ql-toolbar.ql-snow button:hover .ql-fill {
+  fill: var(--black);
+}
+
+/* All styles below here deal with the activation of the wysiwyg UI. */
+.card-bottom-wysiwyg-wrapper.wysiwyg-active .ql-toolbar {
+  opacity: 1;
+  pointer-events: all;
+  width: 100%;
+}
+
+.card-bottom-wysiwyg-wrapper.wysiwyg-active .card-bottom-wysiwyg {
+  border-color: var(--black);
+}
+
+.card--front {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.card--front .card-bottom {
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  position: absolute;
+}
+/*# sourceMappingURL=ajr_styles.css.map */

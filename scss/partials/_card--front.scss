@@ -1,0 +1,12 @@
+.card {
+    &--front {
+        align-items: unset;
+
+        .card-bottom {
+            width: 100%;
+            height: 30%;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+.slidecontainer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: var(--border-size); /* Specified height */
+	background: var(--stark-white-transparent);
+	outline: none; /* Remove outline */
+	position: relative;
+    width: calc(100% - 28px);
+    margin: auto;
+}
+
+/* The slider itself */
+.slider {
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	height: 18px;
+	width: 18px;
+	background: var(--black); /* Green background */
+	cursor: move; /* Cursor on hover */
+	border-radius: 1000px;
+    border: 2px solid #fff;
+}
+
+.slider::-moz-range-thumb {
+	height: 18px;
+	width: 18px;
+	background: var(--black); /* Green background */
+	cursor: move; /* Cursor on hover */
+	border-radius: 1000px;
+	border: 2px solid #fff;
+}
+.bottom-slider {
+	position: absolute;
+    top: 220px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-header {
+    justify-content: space-between;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-title {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 3px 5px;
+    padding-right: 67px;
+	background-color: var(--stark-white-transparent);
+	border-left: 14px solid transparent;
+}
+
+.slider-tooltip {
+	width: 54px;
+	border: 1px solid var(--black-transparent);
+    color: var(--black);
+    transition: var(--base-transition);
+    transition-property: border-color;
+    min-width: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 0px 5px 8px;
+    border-radius: 7px;
+    font-size: 13px;
+    margin-right: 14px;
+}
+
+/* Styles for size slider */
+.bottom-slider.size {
+    top: 285px;
+}
+
+.bottom-slider.size .size-position-title {
+    padding-right: 147px;
+}
+
+/* Styles for vertical slider */
+.bottom-slider.vertical {
+    transform: rotate(-90deg);
+    right: -24px;
+    top: 60px;
+    width: 174px;
+    flex-direction: column-reverse;
+}
+
+.bottom-slider.vertical .vertical-position-header {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.bottom-slider.vertical .vertical-position-title{
+    padding-right: 18px;
+}
+
+.bottom-slider.vertical .vertical-position-title:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 18px;
+    background-color: var(--stark-white-transparent);
+    right: -18px;
+    top: 0;
+}
+
+.bottom-slider.vertical .slider-vertical-tooltip {
+    margin: 0;
+    transform: rotate(90deg);
+    min-width: 54px;
+}
+
+.bottom-slider.vertical .vertical-position {
+    width: 98%;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+.creature-controls-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: var(--base-transition);
+    transition-property: opacity;
+    top: 15%;
+}
+
+.creature-controls-container:hover {
+    opacity: 1;
+}
+
+
+/* Creature rotate controls. */
+.creature-controls-container:hover .creature-controls {
+    pointer-events: all;
+}
+
+.creature-controls {
+    pointer-events: none;
+    position: relative;
+    width: 310px;
+    height: 360px;
+    display: flex;
+    padding-top: 14px;
+    border: var(--border-size) solid var(--stark-white-transparent);
+    border-radius: 27px;
+    background-color: rgba(80, 80, 80, 0.49);
+    box-shadow: var(--m-s-3);
+}
+
+.rotate-creature {
+    left: 0;
+    padding: 14px;
+    top: 0;
+    position: absolute;
+}
+
+.rotate-creature .rs-bg-color {
+	background-color: transparent;
+}
+
+.rotate-creature .rs-path-color {
+	background-color: transparent;
+	border: var(--border-size) solid var(--stark-white-transparent);
+    border-radius: 1000px;
+}
+
+.rotate-creature .rs-tooltip.edit,
+.rotate-creature .rs-tooltip.hover,
+.rotate-creature .rs-tooltip {
+    border: 1px solid var(--black-transparent);
+    color: var(--black);
+    transition: var(--base-transition);
+    transition-property: border-color;
+    min-width: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.rotate-creature .rs-tooltip.edit:hover {
+    border: 1px solid var(--black-transparent-hover);
+    cursor: text;
+}
+
+.rotate-creature .rs-tooltip.edit:focus,
+.rotate-creature .rs-tooltip.hover {
+    border: 1px solid var(--black);
+    cursor: text;
+}
+
+.rotate-creature .rs-handle:after  {
+    background-color: transparent;
+}
+
+.rotate-creature .rs-border {
+    border-color: transparent;
+    pointer-events: none;
+}
+
+.rotate-creature .rs-inner.rs-border:before {
+	background-color: var(--stark-white-transparent);
+	position: absolute;
+	content: 'rotation';
+	width: 100%;
+    text-align: center;
+    top: 23%;
+    padding: 3px 5px;
+    z-index: 11;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.rotate-creature .rs-handle  {
+    background-color: var(--black);
+    border: 2px solid #fff;
+}
+
+.rotate-creature .rs-block  {
+    overflow: hidden;
+}
