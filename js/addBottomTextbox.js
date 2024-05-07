@@ -13,6 +13,7 @@ function addBottomTextbox(selector) {
 	// Set the toolbar oprions for Quill.
 	let toolbarOptions = [
 		['bold', 'italic', 'underline', 'strike'],
+		[{ size: [ 'small', false, 'large', 'huge' ]}],
 		[{ 'list': 'ordered'}, { 'list': 'bullet' }],
 		[{ 'indent': '-1'}, { 'indent': '+1' }],
 		[{ 'align': [] }],

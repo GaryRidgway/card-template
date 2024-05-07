@@ -913,7 +913,6 @@ body {
 }
 
 .bottom-textbox .ql-toolbar.ql-snow {
-  background-color: var(--stark-white-transparent);
   position: absolute;
   bottom: 100%;
   color: var(--black);
@@ -924,10 +923,6 @@ body {
   font-weight: 400;
   color: var(--black);
   letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 22px;
-  line-height: 22px;
-  background-color: var(--stark-white-transparent);
 }
 
 .card-bottom-wysiwyg .ql-editor {
@@ -997,5 +992,111 @@ body {
   height: 30%;
   bottom: 0;
   position: absolute;
+}
+
+.card--front .card-bottom > .titlebox {
+  top: unset;
+  bottom: 125%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  display: inherit;
+}
+
+.card--front .card-bottom > .titlebox .titleing {
+  -webkit-filter: drop-shadow(0 0 0.75rem #000000);
+          filter: drop-shadow(0 0 0.75rem #000000);
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 1000px;
+  height: 1000px;
+  top: -153px;
+  left: calc(50% - 516px);
+}
+
+.card--front .card-bottom > .titlebox .titleing:before, .card--front .card-bottom > .titlebox .titleing:after {
+  -webkit-filter: unset;
+          filter: unset;
+}
+
+.card--front .card-bottom > .titlebox .titleing .powerbox {
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 100px;
+  height: 100px;
+  bottom: 0%;
+  left: calc(50% - 62px);
+  display: inline-block;
+  border-radius: 50%;
+  border: 12px solid #fafafaa6;
+  -webkit-box-shadow: inset 0px 0px 12px #000000c4;
+  box-shadow: inset 0px 0px 12px #000000c4;
+  font-size: 5rem;
+  line-height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+}
+
+.card--front .card-bottom > .titlebox .titleing .powerbox--bg {
+  background-color: #fafafac9;
+  width: 124px;
+  position: relative;
+  height: 124px;
+  bottom: 184%;
+  border-radius: 50%;
+  bottom: -91%;
+  left: calc(50% - 50px);
+}
+
+.card--front .card-bottom > .titlebox .titleing .bottom-textbox {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 571.4px;
+  left: calc(50% - calc(571.4px / 2));
+  position: absolute;
+  bottom: 93px;
+  margin: 0px;
+  height: 278px;
+  z-index: 100;
+}
+
+.card--front .card-bottom > .titlebox .titleing .bottom-textbox .ql-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--stark-white-transparent);
+}
+
+.card--front .card-bottom > .titlebox .titleing .bottom-textbox .ql-toolbar .ql-align .ql-picker-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card--front .card-bottom > .titlebox .titleing .bottom-textbox .ql-toolbar .ql-align .ql-picker-item svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card--front .card-bottom > .titlebox .titleing.titleing--bg {
+  position: absolute;
+  border: none;
+  background-color: #fafafa99;
+  width: 1032px;
+  height: 1032px;
+}
+
+.card--front .card-bottom > .titlebox .titleing.titleing--bg:before, .card--front .card-bottom > .titlebox .titleing.titleing--bg:after {
+  content: unset;
 }
 /*# sourceMappingURL=ajr_styles.css.map */

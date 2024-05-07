@@ -7,6 +7,97 @@
             height: 30%;
             bottom: 0;
             position: absolute;
+
+            &>.titlebox {
+                top: unset;
+                bottom: 125%;
+                transform: rotate(180deg);
+                display: inherit;
+    
+                .titleing {
+                    filter: drop-shadow(0 0 0.75rem #000000);
+                    background-color: transparent;
+                    box-shadow: none;
+                    width: 1000px;
+                    height: 1000px;
+                    top: -153px;
+                    left: calc(50% - 516px);
+    
+                    &:before,
+                    &:after {
+                        filter: unset;
+                    }
+
+                    .powerbox {
+                        position: absolute;
+                        transform: rotate(180deg);
+                        width: 100px;
+                        height: 100px;
+                        bottom: 0%;
+                        left: calc(50% - 62px);
+                        display: inline-block;
+                        border-radius: 50%;
+                        border: 12px solid #fafafaa6;
+                        -webkit-box-shadow: inset 0px 0px 12px #000000c4;
+                        box-shadow: inset 0px 0px 12px #000000c4;
+                        font-size: 5rem;
+                        line-height: 5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #333;
+
+                        &--bg {
+                            background-color: #fafafac9;
+                            width: 124px;
+                            position: relative;
+                            height: 124px;
+                            bottom: 184%;
+                            border-radius: 50%;
+                            bottom: -91%;
+                            left: calc(50% - 50px);
+                        }
+                    }
+
+                    .bottom-textbox {
+                        transform: rotate(180deg);
+                        width: 571.4px;
+                        left: calc(50% - calc(571.4px / 2));
+                        position: absolute;
+                        bottom: 93px;
+                        margin: 0px;
+                        height: 278px;
+                        z-index: 100;
+
+                        .ql-toolbar {
+                            display: flex;
+                            background-color: var(--stark-white-transparent);
+
+                            .ql-align {
+                                .ql-picker-label {
+                                    display: flex;
+                                }
+                                .ql-picker-item svg {
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+
+                    &.titleing--bg {
+                        position: absolute;
+                        border: none;
+                        background-color: #fafafa99;
+                        width: 1032px;
+                        height: 1032px;
+
+                        &:before,
+                        &:after {
+                            content: unset;
+                        }
+                    }
+                }
+            }
         }
     }
 }
